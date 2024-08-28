@@ -1,0 +1,28 @@
+body {
+    background: #2b2b2b;
+    margin: 0;
+    padding: 0;
+}
+
+.loader {
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.loader span {
+    font-family: arial;
+    font-size: 24px;
+    color: rgba(255, 255, 255, .1);
+    display: inline-block;
+    transition: all .5s;
+    animation: animate 2s infinite;
+}
+
+@keyframes animation-delay {
+    0% {
+        color: rgba(255, 255, 255, .1);
+    }
+}
