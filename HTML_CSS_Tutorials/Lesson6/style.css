@@ -1,0 +1,23 @@
+p {
+    color: red;
+    font-size: 20px;
+}
+
+h1 {
+    color: blue;
+}
+
+#p-2 {
+    color: green;
+    font-size: 30px;
+}
+
+.demo {
+    color: yellow;
+    font-size: 25px;
+}
+
+
+.demo-2 {
+    font-size: 40px;
+}

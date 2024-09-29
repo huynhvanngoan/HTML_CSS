@@ -1,0 +1,35 @@
+ /* Độ ưu tiên: 0,0,1 */
+ p {
+    color: gray;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+/* Độ ưu tiên: 0,1,0 */
+.text {
+    color: blue;
+    font-size: 18px;
+}
+
+/* Độ ưu tiên: 0,1,1 */
+p.text {
+    color: green;
+}
+
+/* Độ ưu tiên: 1,0,0 */
+#unique {
+    color: red;
+    font-weight: bold;
+}
+
+/* Độ ưu tiên: 1,0,1 */
+p#unique {
+    color: purple;
+}
+
+/* Độ ưu tiên: 1,1,1 */
+p#unique.text {
+    color: orange;
+    font-style: normal;
+}

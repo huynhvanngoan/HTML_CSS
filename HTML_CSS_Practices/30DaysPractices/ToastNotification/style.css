@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+    --success-color: rgb(0, 128, 0);
+    --warning-color: rgb(255, 153, 7);
+    --error-color: rgb(249, 24, 0);
+
+    --success-light-color: rgba(0, 128, 0, 0.4);
+    --warning-light-color: rgba(255, 153, 7, 0.4);
+    --error-light-color: rgba(249, 24, 0, 0.4);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ecf0f1;
+}
+
+.control button {
+    border: none;
+    outline: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 24px;
+    color: white;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.success {
+    background: var(--success-color);
+}
+
+.warning {
+    background: var(--warning-color);
+}
+
+.error {
+    background: var(--error-color);
+}
+
+#toast-wrapper {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+.toast {
+    position: relative;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    color: white;
+    border-left: 5px solid var(--success-color);
+    overflow: hidden;
+    animation: slide_show 2s ease forwards;
+    margin-bottom: 10px;
+}
+
+.toast i {
+    margin: 0 10px;
+}
+
+.toast .countdown {
+    position: absolute;
+    background: var(--success-color);
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    animation: countdown 4s ease;
+}
+
+.toast.success {
+    background: var(--success-light-color);
+    border-left: 5px solid var(--success-color);
+}
+
+.toast.warning {
+    background: var(--warning-light-color);
+    border-left: 5px solid var(--warning-color);
+}
+
+.toast.error {
+    background: var(--error-light-color);
+    border-left: 5px solid var(--error-color);
+}
+
+.toast.success .countdown {
+    background: var(--success-light-color);
+}
+
+.toast.warning .countdown {
+    background: var(--warning-light-color);
+}
+
+.toast.error .countdown {
+    background: var(--error-light-color);
+}
+
+@keyframes countdown {
+    0% {
+        width: 100%;
+    }
+    100% {
+        width: 0%;
+    }
+}
+
+@keyframes slide_show {
+    0% {
+        transform: translateX(100%);
+    }
+
+    25% {
+        transform: translateX(-10%);
+    }
+
+    50% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-10px);
+    }
+}
+
+@keyframes slide_hide {
+    0% {
+        transform: translateX(-10%);
+    }
+
+    25% {
+        transform: translateX(0%);
+    }
+
+    50% {
+        transform: translateX(-10%);
+    }
+
+    100% {
+        transform: translateX(200%);
+    }
+}

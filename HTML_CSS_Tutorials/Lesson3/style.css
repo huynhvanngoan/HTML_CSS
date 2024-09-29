@@ -1,0 +1,17 @@
+img {
+    transition: 1.5s ease-in-out;
+}
+
+input:checked ~ img {
+    /* 1. Nếu checked thì biến image ra khỏi giao diện và không chiếm vị trí, và không thể tương tác */
+    /* display: none; */
+
+    /* 2. Nếu checked thì biến image ra khỏi giao diện nhưng vẫn chiếm vị trí và không thể tương tác*/
+    /* visibility: hidden; */
+
+    /* 3. Nếu checked thì sẽ làm mờ image đến trong suốt và có thể tương tác được  */
+    opacity: 0;
+    
+    /* Thêm visibiLity để sau khi mờ hẳn thì hidden luôn không thể tương tác được nữa */
+    visibility: hidden;
+}

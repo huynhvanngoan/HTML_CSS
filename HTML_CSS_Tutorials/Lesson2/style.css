@@ -1,0 +1,16 @@
+body {
+    background-image: url("bg.jpg");
+}
+
+h2 {
+    visibility: hidden;
+    /* opacity: 0; */
+    /* display: none; */
+    background-color: aqua;
+}
+
+span {
+    visibility: visible;
+    /* opacity: 1; */
+    /* display: inline-block; */
+}

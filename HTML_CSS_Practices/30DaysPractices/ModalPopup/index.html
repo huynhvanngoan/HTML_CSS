@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Popup</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <button class="open-modal-btn">Open Modal</button>
+
+    <div class="modal hide">
+        <div class="modal__inner">
+            <!-- Modal header start -->
+            <div class="modal__header">
+                <p>Welcome</p>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <!-- Modal header end -->
+
+            <!-- Modal body start -->
+            <div class="modal__body">
+                <h2>Modal</h2>
+                <p>This is a modal popup. Click on the X mark to close it.</p>
+            </div>
+            <!-- Modal body end -->
+
+            <!-- Modal footer start -->
+            <div class="modal__footer">
+                <button>Close</button>
+            </div>
+            <!-- Modal footer end -->
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
