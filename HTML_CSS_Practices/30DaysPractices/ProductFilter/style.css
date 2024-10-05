@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+body {
+    height: 100vh;
+    background: #dadada;
+}
+
+.container {
+    width: 500px;
+    height: 600px;
+    background: white;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 10px 20px 20px 20px;
+    overflow-y: scroll;
+}
+
+h1 {
+    margin: 20px;
+    font-weight: 600;
+}
+
+.search {
+    border: 1px solid #000;
+    display: flex;
+    justify-content: flex-start;
+    padding: 5px 10px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.search input {
+    width: 100%;
+    font-weight: normal;
+    border: none;
+    outline: none;
+}
+
+.search i {
+    color: #333;
+    padding: 5px;
+    font-size: 18px;
+}
+
+
+
+.product {
+    display: flex;
+    height: 100px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.product img {
+    width: 100px;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.product .info {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.info .name,
+.info .price {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+}
+
+.info .name {
+    font-weight: 500;
+}
+
+.product:hover {
+    background: #dadada;
+}
+
+.hide {
+    display: none;
+}
