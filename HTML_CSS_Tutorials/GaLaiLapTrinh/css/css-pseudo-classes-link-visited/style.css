@@ -1,0 +1,7 @@
+.click_me:link {
+    color: chocolate;
+}
+
+.click_me:visited {
+    color: green;
+}

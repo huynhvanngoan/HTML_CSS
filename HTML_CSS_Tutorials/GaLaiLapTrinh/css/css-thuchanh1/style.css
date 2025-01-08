@@ -1,0 +1,15 @@
+img {
+    transition: 1.5s;
+}
+
+/* nếu thẻ input được check thì sẽ chọn tất cả các thẻ img đồng cấp ở phía sau đó  */
+input:checked ~ img {
+    /* 1. Nếu muốn biến mất khỏi giao diện */
+    /* display: none; */
+    /* 2. Biến mất khỏi giao diện nhưng vẫn chiếm vị trí nhưng không tương tác được */
+    /* visibility: hidden; */
+    /* 3. Làm mờ đi, tuy mất đi khỏi giao diện nhưng vẫn tương tác được  */
+    opacity: 0;
+    visibility: hidden;
+} 
+

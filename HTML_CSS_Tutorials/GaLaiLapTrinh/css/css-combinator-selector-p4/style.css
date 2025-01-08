@@ -1,0 +1,26 @@
+/* Chọn thẻ đứng sát ngay sau dùng + */
+h1 + h2 {
+    color: red;
+}
+
+/* h1 + h3 {
+    color: blue;
+} */
+
+.demo + h3 {
+    color: blue;
+}
+
+.demo.demo2 + h3 {
+    color: green;
+}
+
+/* chọn tất cả element đằng sau dùng dấu ~ */
+
+h1 ~ h3 {
+    color: violet;
+}
+
+div ~ div {
+    color: purple;
+}

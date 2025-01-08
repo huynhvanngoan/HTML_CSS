@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    background-color: orange;
+    height: 100px;
+    position: relative;
+}
+
+h3 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}

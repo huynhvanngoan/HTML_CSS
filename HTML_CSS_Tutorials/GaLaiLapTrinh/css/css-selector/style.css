@@ -1,0 +1,19 @@
+#p_2  {
+    color: green;
+    font-size: 20px;
+}
+
+h1 {
+    color: blue;
+}
+
+.demo {
+    color: blueviolet;
+    font-size: 20px;
+}
+
+.item-list {
+    list-style: none;
+}
+
+

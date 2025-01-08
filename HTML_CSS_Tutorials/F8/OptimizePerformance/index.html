@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image srcset attribute</title>
+
+    <!--
+    ## Trang web sử dụng ít hình ản (Tốc độ tải trang không bị ảnh hưởng nhiều bởi hình ảnh) 
+        Tối ưu sử dụng hình ảnh trên trang web?
+            `1. Sử dụng hình dạng ảnh phù hợp
+                - Hình Học, vector,v.v: svg
+                - Bitmap transparent: PNG, WEBP
+                - Bitmap không transparent: JPEG, WEBP
+            2. Nén hình ảnh (giảm dung lượng)
+                - https://tinypng.com/
+            3. Sử dụng kích thước ảnh phù hợp
+                - Original: 4000px x 4000px, Figma: 800px x 800px (CSS), Resize: 1600px x 1600px (2x), đáp ứng tốt cho các màn hình PPI/DPI cao (retian)
+                - PPI (Pixel per inch), DPI (Dots per inch): 100 DPI, 300 DPI
+
+        Loại màn hình:
+            1. Màn hình thường (DPI thấp - 1 : 1): 800px x 800px ✅, 1600px x 1600px ❌
+            2. Màn hình retian (DPI cao - 2 : 1): 800px x 800px ❌, 1600px x 1600px ✅
+
+        ## Trang web sử dụng nhiều hình ảnh
+            Thiết bị:
+                1. Mobile:  1600px x 1600px ❌ => Tốn băng thông, tải lâu hơn => Giảm trải nghiệm người dùng
+                2. Tablet:  1600px x 1600px ❌
+                3. Desktop: 1600px x 1600px ✅
+
+        ## Bài toán 1
+            1. Mobile: 50px x 50px
+            2. Tablet: 100px x 100px
+            3. Desktop: 200px x 200px
+            
+        ## Bài toán 2
+            - Desktop: 200px x 200px
+
+        ## Bài toán 3
+            - Desktop: /img/image-1.jpg
+            - Mobile: /img/image-2.jpg
+
+    -->
+</head>
+
+<body>
+    <!-- 1. Resolution switching: Different sizes -->
+    <!-- <img srcset="
+        img-100x100.jpg 100w, 
+        img-200x200.jpg 200w,
+        img-400x400.jpg 400w" sizes="
+            (max-width: 575px) 100px,
+            (max-width: 991px) 200px, 
+            400px
+        " src="img-400x400.jpg" alt="" /> -->
+
+    <!-- 2. Resolution switching: Same size, different resolutions -->
+    <!-- <img srcset="image-200x200.jpg 1x, image-400x400 2x" src="image-400x400.jpg" alt=""> -->
+
+    <!-- 3. Art Direction -->
+        <picture>
+            <source media="(max-width: 799px)" srcset="elva-480w-close-portrait.jpg" />
+            <source media="(min-width: 800px)" srcset="elva-800w.jpg" />
+            <img src="elva-800w.jpg" alt="Chris standing up holding his daughter Elva" />
+        </picture>
+
+
+</body>
+
+</html>

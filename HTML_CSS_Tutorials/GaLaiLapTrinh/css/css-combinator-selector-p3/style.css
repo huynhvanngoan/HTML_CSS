@@ -1,0 +1,15 @@
+div p {
+    color: blue;
+}
+
+div > p {
+    color: red;
+}
+
+.loi_chuc p {
+    font-size: 30px;
+}
+
+block  p {
+    color: green;
+}

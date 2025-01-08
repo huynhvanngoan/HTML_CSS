@@ -1,0 +1,17 @@
+h1,
+h2,
+p,
+ul {
+    color: red;
+}
+
+#title,
+.demo,
+p {
+    color: green;
+}
+
+/* Chỉ tác động lên phần tử nào có đủ 2 class demo và demo2 */
+.demo.demo2 {
+    color: blueviolet;
+}

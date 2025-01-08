@@ -1,0 +1,19 @@
+/* p:hover {
+    color: red;
+    font-size: 30px;
+}
+
+#click-me:hover {
+    color: blue;
+    font-size:40px;
+}
+
+.di_chuot:hover{
+    color: green;
+    font-size: 50px;
+} */
+
+.di_chuot:active {
+    color: green;
+    font-size: 50px;
+}
